@@ -1,0 +1,293 @@
+{
+  "common": {
+    "home": "Home",
+    "players": "Players",
+    "servers": "Servers",
+    "news": "News",
+    "docs": "Docs",
+    "team": "Team",
+    "wiki": "Wiki",
+    "search": "Search...",
+    "loading": "Loading...",
+    "error": "Error",
+    "back": "Back",
+    "share": "Share",
+    "download": "Download",
+    "copyUrl": "Copy URL",
+    "viewAll": "View all",
+    "learnMore": "Learn more",
+    "language": "Language",
+    "english": "English",
+    "spanish": "Spanish"
+  },
+  "navbar": {
+    "search": "Search...",
+    "toggleMenu": "Toggle menu"
+  },
+  "home": {
+    "hero": {
+      "badge": "Community Hub",
+      "title": "The Ultimate Minecraft Hub",
+      "subtitle": "Search players, monitor servers and follow live Mojang news in one place. Built by the community, for the community.",
+      "searchPlaceholder": "Search players, servers...",
+      "cta": "Explore now"
+    },
+    "dimensions": {
+      "eyebrow": "Explore dimensions",
+      "title": "Dive into the worlds",
+      "description": "From the lush Overworld to the fiery Nether and the mysterious End. Learn everything about each dimension.",
+      "overworld": "Overworld",
+      "overworldDesc": "Lush forests, towering mountains and endless biomes — the world every Minecraft journey begins in.",
+      "nether": "The Nether",
+      "netherDesc": "A hellish realm of lava oceans, soul valleys and fortresses guarded by piglins and ghasts.",
+      "end": "The End",
+      "endDesc": "A void of obsidian pillars where the Ender Dragon roams. The final frontier of every save.",
+      "homeDimension": "Home dimension",
+      "hotDimension": "Hot dimension",
+      "endgame": "Endgame"
+    },
+    "features": {
+      "title": "Everything in one place",
+      "playerSearch": "Player search",
+      "playerSearchDesc": "Look up any Java player by username or UUID.",
+      "serverStatus": "Server status",
+      "serverStatusDesc": "Real-time status for any Java or Bedrock server.",
+      "skinViewer": "3D Skin viewer",
+      "skinViewerDesc": "Full 3D preview with capes and animations.",
+      "liveNews": "Live news",
+      "liveNewsDesc": "Aggregated feed from Mojang and the community."
+    },
+    "stats": {
+      "players": "Players searched",
+      "servers": "Servers monitored",
+      "articles": "News articles",
+      "uptime": "Uptime"
+    },
+    "news": {
+      "title": "Latest news",
+      "readMore": "Read article",
+      "viewAll": "View all news"
+    }
+  },
+  "player": {
+    "search": {
+      "title": "Player search",
+      "subtitle": "Look up any Minecraft Java player by username or UUID",
+      "placeholder": "Enter username...",
+      "button": "Search",
+      "recent": "Recent searches",
+      "popular": "Popular players"
+    },
+    "profile": {
+      "backToSearch": "Back to search",
+      "javaPlayer": "Java player",
+      "skinModel": "Skin model",
+      "cape": "Cape",
+      "owned": "Owned",
+      "none": "None",
+      "downloadSkin": "Download skin",
+      "verified": "Verified",
+      "founderOwner": "Founder & Owner",
+      "coFounder": "Co-Founder"
+    },
+    "tabs": {
+      "overview": "Overview",
+      "skin": "Skin",
+      "cape": "Cape",
+      "nameHistory": "Name History",
+      "statistics": "Statistics",
+      "servers": "Servers"
+    },
+    "overview": {
+      "skinViewer": "Skin viewer",
+      "dragToRotate": "Drag to rotate",
+      "avatar": "Avatar",
+      "head": "Head",
+      "body": "Body",
+      "status": "Status",
+      "active": "Active",
+      "firstSeen": "First seen",
+      "mojangEra": "Mojang era",
+      "nameChanges": "Name changes",
+      "externalProfiles": "External profiles",
+      "skinHistory": "Skin history"
+    },
+    "identity": {
+      "title": "Identity",
+      "uuid": "UUID",
+      "uuidRaw": "UUID raw"
+    },
+    "account": {
+      "title": "Account",
+      "username": "Username",
+      "model": "Model",
+      "edition": "Edition"
+    },
+    "quickShare": {
+      "title": "Quick share",
+      "copyUrl": "Copy profile URL"
+    },
+    "notFound": {
+      "title": "Player not found",
+      "description": "We couldn't find a Minecraft player named",
+      "tryAnother": "Try another name"
+    },
+    "skinHistory": {
+      "title": "Skin history",
+      "comingSoon": "Skin history coming soon",
+      "comingSoonDesc": "We're working on tracking every skin a player has worn over time."
+    },
+    "nameHistory": {
+      "title": "Name history",
+      "current": "Current",
+      "original": "Original"
+    },
+    "statistics": {
+      "title": "Player Statistics",
+      "comingSoon": "Statistics coming soon",
+      "comingSoonDesc": "We're working on integrating detailed player statistics from various servers."
+    },
+    "servers": {
+      "title": "Servers played",
+      "comingSoon": "Server history coming soon",
+      "comingSoonDesc": "Track which servers this player has been seen on."
+    }
+  },
+  "server": {
+    "search": {
+      "title": "Server status",
+      "subtitle": "Check real-time status for any Minecraft server",
+      "placeholder": "Enter server IP...",
+      "button": "Check"
+    },
+    "status": {
+      "online": "Online",
+      "offline": "Offline",
+      "players": "Players",
+      "version": "Version",
+      "motd": "MOTD",
+      "latency": "Latency"
+    }
+  },
+  "wiki": {
+    "title": "Minecraft Wiki",
+    "subtitle": "Real-time information from the official Minecraft Wiki",
+    "searchPlaceholder": "Search articles...",
+    "categories": {
+      "blocks": "Blocks",
+      "items": "Items",
+      "mobs": "Mobs",
+      "biomes": "Biomes",
+      "structures": "Structures",
+      "enchantments": "Enchantments",
+      "potions": "Potions",
+      "mechanics": "Mechanics"
+    },
+    "featured": "Featured articles",
+    "recent": "Recent changes",
+    "popular": "Popular articles",
+    "readMore": "Read more",
+    "source": "Source: Minecraft Wiki",
+    "lastUpdated": "Last updated",
+    "relatedArticles": "Related articles",
+    "noResults": "No results found",
+    "tryDifferent": "Try a different search term",
+    "autoUpdate": "Auto-updating every minute",
+    "viewOnWiki": "View on Wiki"
+  },
+  "docs": {
+    "title": "Documentation",
+    "subtitle": "Everything you need to know about YuuTiers",
+    "overworld": {
+      "title": "Overworld",
+      "description": "The main dimension where players spawn and start their journey.",
+      "biomes": "Biomes",
+      "mobs": "Mobs",
+      "ores": "Ores",
+      "structures": "Structures"
+    },
+    "nether": {
+      "title": "The Nether",
+      "description": "A dangerous dimension full of lava and hostile mobs.",
+      "biomes": "Biomes",
+      "mobs": "Mobs",
+      "structures": "Structures"
+    },
+    "end": {
+      "title": "The End",
+      "description": "The final dimension, home of the Ender Dragon.",
+      "biomes": "Biomes",
+      "mobs": "Mobs",
+      "structures": "End Cities & Elytra"
+    }
+  },
+  "news": {
+    "title": "Minecraft News",
+    "subtitle": "Stay up to date with the latest news from Mojang and the community",
+    "latest": "Latest articles",
+    "featured": "Featured",
+    "readMore": "Read more",
+    "publishedOn": "Published on",
+    "by": "by",
+    "categories": {
+      "all": "All",
+      "updates": "Updates",
+      "snapshots": "Snapshots",
+      "community": "Community",
+      "events": "Events"
+    }
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "The people behind YuuTiers",
+    "founder": "Founder & Owner",
+    "coFounder": "Co-Founder",
+    "developer": "Developer",
+    "designer": "Designer",
+    "moderator": "Moderator",
+    "viewProfile": "View profile"
+  },
+  "footer": {
+    "description": "The ultimate Minecraft community hub. Search players, monitor servers and stay up to date with live Mojang news.",
+    "platform": "Platform",
+    "resources": "Resources",
+    "legal": "Legal",
+    "community": "Community",
+    "support": "Support",
+    "players": "Players",
+    "servers": "Servers",
+    "news": "News",
+    "wiki": "Wiki",
+    "documentation": "Documentation",
+    "team": "The Team",
+    "about": "About us",
+    "faq": "FAQ",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "contact": "Contact",
+    "discord": "Discord",
+    "twitter": "Twitter",
+    "github": "GitHub",
+    "youtube": "YouTube",
+    "helpCenter": "Help center",
+    "reportBug": "Report a bug",
+    "featureRequest": "Feature request",
+    "status": "Status page",
+    "copyright": "All rights reserved.",
+    "madeWith": "Made with",
+    "by": "by",
+    "mojangDisclaimer": "NOT AN OFFICIAL MINECRAFT SERVICE.",
+    "mojangDisclaimerFull": "We are not affiliated with, endorsed, sponsored, or specifically approved by Mojang AB or Microsoft. Minecraft and the Minecraft logo are trademarks of Mojang Synergies AB. YuuTiers is an independent community project that uses public Mojang APIs.",
+    "importantProfiles": "Important profiles",
+    "annushkazDesc": "Creator and main developer of YuuTiers",
+    "dexyDesc": "Co-creator and designer of YuuTiers"
+  },
+  "errors": {
+    "notFound": "Page not found",
+    "notFoundDesc": "The page you're looking for doesn't exist or has been moved.",
+    "serverError": "Server error",
+    "serverErrorDesc": "Something went wrong on our end. Please try again later.",
+    "goHome": "Go home",
+    "tryAgain": "Try again"
+  }
+}
