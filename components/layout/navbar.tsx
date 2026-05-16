@@ -58,8 +58,8 @@ export function Navbar() {
 
   // Secondary nav (under "More" dropdown) — gives breathing room in the header
   const moreNav = [
-    { href: '/status', label: 'Status', icon: Activity, accent: '#10b981' },
-    { href: '/tools', label: 'Tools', icon: Wrench, accent: '#3b82f6' },
+    { href: '/', label: 'PROXIMAMENTE', icon: Activity, accent: '#10b981' },
+    { href: '/', label: 'PROXIMAMENTE', icon: Wrench, accent: '#3b82f6' },
     { href: '/changelogs', label: 'Changelogs', icon: ScrollText, accent: '#f59e0b' },
     { href: '/skin-editor', label: 'Skin Editor', icon: Palette, accent: '#a855f7' },
     { href: '/news', label: t('common.news'), icon: Newspaper, accent: '#3b82f6' },
