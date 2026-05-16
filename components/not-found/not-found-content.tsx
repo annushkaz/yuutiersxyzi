@@ -169,7 +169,7 @@ export function NotFoundContent() {
             className="space-y-3"
           >
             <h2 className="text-2xl sm:text-4xl font-bold text-[#f0f0f8] text-balance">
-              This page took an Ender Pearl
+              This page took an Ender Pearl lmao
               <br className="hidden sm:block" />
               <span className="text-[#8888aa]"> and never came back.</span>
             </h2>
