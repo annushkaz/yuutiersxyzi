@@ -1,0 +1,571 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(0.06 0.01 270);
+  --foreground: oklch(0.97 0.01 270);
+  --card: oklch(0.09 0.01 270);
+  --card-foreground: oklch(0.97 0.01 270);
+  --popover: oklch(0.09 0.01 270);
+  --popover-foreground: oklch(0.97 0.01 270);
+  --primary: oklch(0.65 0.2 255);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.18 0.01 270);
+  --secondary-foreground: oklch(0.97 0.01 270);
+  --muted: oklch(0.18 0.01 270);
+  --muted-foreground: oklch(0.65 0.02 270);
+  --accent: oklch(0.65 0.2 280);
+  --accent-foreground: oklch(0.99 0 0);
+  --destructive: oklch(0.6 0.22 25);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.22 0.01 270 / 0.5);
+  --input: oklch(0.22 0.01 270);
+  --ring: oklch(0.65 0.2 255);
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: oklch(0.06 0.01 270);
+  --foreground: oklch(0.97 0.01 270);
+  --card: oklch(0.09 0.01 270);
+  --card-foreground: oklch(0.97 0.01 270);
+  --popover: oklch(0.09 0.01 270);
+  --popover-foreground: oklch(0.97 0.01 270);
+  --primary: oklch(0.65 0.2 255);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.18 0.01 270);
+  --secondary-foreground: oklch(0.97 0.01 270);
+  --muted: oklch(0.18 0.01 270);
+  --muted-foreground: oklch(0.65 0.02 270);
+  --accent: oklch(0.65 0.2 280);
+  --accent-foreground: oklch(0.99 0 0);
+  --destructive: oklch(0.6 0.22 25);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.22 0.01 270 / 0.5);
+  --input: oklch(0.22 0.01 270);
+  --ring: oklch(0.65 0.2 255);
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    background-color: #050508;
+  }
+  body {
+    @apply text-foreground;
+    background-color: #050508;
+  }
+}
+
+/* ───────── Custom design utilities ───────── */
+
+.text-gradient {
+  background: linear-gradient(135deg, #f1f1f7 0%, #cbd5ff 50%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #60a5fa 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.glass {
+  background: rgba(8, 8, 14, 0.65);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+}
+
+.laby-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.laby-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+}
+
+.aurora {
+  position: absolute;
+  inset: -20%;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.25), transparent 45%),
+    radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.22), transparent 50%),
+    radial-gradient(circle at 60% 80%, rgba(34, 197, 94, 0.14), transparent 45%);
+  filter: blur(60px);
+  animation: aurora-shift 18s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+@keyframes aurora-shift {
+  0% { transform: translate(0, 0) scale(1); opacity: 0.85; }
+  50% { transform: translate(2%, -2%) scale(1.05); opacity: 1; }
+  100% { transform: translate(-2%, 1%) scale(1); opacity: 0.9; }
+}
+
+.shimmer {
+  background: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 0.03) 30%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0.03) 70%
+  );
+  background-size: 200% 100%;
+  animation: shimmer-anim 1.5s linear infinite;
+}
+
+@keyframes shimmer-anim {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.glow-card {
+  position: relative;
+}
+
+.glow-card::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.25),
+    rgba(124, 58, 237, 0.18),
+    transparent 60%
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.glow-card:hover::before {
+  opacity: 1;
+}
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.animate-float {
+  animation: float-y 6s ease-in-out infinite;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #08080c;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  border: 2px solid #08080c;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.35);
+  color: #fff;
+}
+
+@keyframes ken-burns {
+  0% { transform: scale(1.05) translate(0, 0); }
+  50% { transform: scale(1.12) translate(-1%, -1%); }
+  100% { transform: scale(1.05) translate(0, 0); }
+}
+
+.animate-ken-burns {
+  animation: ken-burns 30s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee,
+.marquee {
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+.animate-shimmer {
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4); }
+  50% { box-shadow: 0 0 32px 4px rgba(59, 130, 246, 0.3); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* ----------------------- Prose for legal & docs --------------------- */
+.prose-yuu {
+  color: #b5b5c8;
+  font-size: 16px;
+  line-height: 1.75;
+}
+.prose-yuu p {
+  margin: 1em 0;
+  color: #b5b5c8;
+}
+.prose-yuu strong {
+  color: #f0f0f8;
+  font-weight: 600;
+}
+.prose-yuu a {
+  color: #3b82f6;
+  text-decoration: underline;
+  text-decoration-color: rgba(59, 130, 246, 0.35);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s;
+}
+.prose-yuu a:hover {
+  text-decoration-color: rgba(59, 130, 246, 0.9);
+}
+.prose-yuu h2 {
+  color: #f0f0f8;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2em 0 0.6em;
+  letter-spacing: -0.01em;
+}
+.prose-yuu h3 {
+  color: #f0f0f8;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 1.8em 0 0.5em;
+}
+.prose-yuu ul {
+  margin: 1em 0;
+  padding-left: 0;
+  list-style: none;
+}
+.prose-yuu ul > li {
+  position: relative;
+  padding-left: 1.4em;
+  margin: 0.45em 0;
+}
+.prose-yuu ul > li::before {
+  content: '';
+  position: absolute;
+  left: 0.25em;
+  top: 0.75em;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: #3b82f6;
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.6);
+}
+.prose-yuu ol {
+  margin: 1em 0;
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+.prose-yuu ol > li::marker {
+  color: #3b82f6;
+  font-weight: 600;
+}
+.prose-yuu code:not(pre code) {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 0.15em 0.4em;
+  border-radius: 6px;
+  font-size: 0.85em;
+  color: #c8c8da;
+}
+.prose-yuu blockquote {
+  margin: 1.4em 0;
+  padding: 0.4em 1.2em;
+  border-left: 3px solid #3b82f6;
+  background: rgba(59, 130, 246, 0.04);
+  border-radius: 0 8px 8px 0;
+  color: #c8c8da;
+  font-style: normal;
+}
+
+/* ----------------------- Wiki Content Styles --------------------- */
+.wiki-content {
+  color: #c0c0d0;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.wiki-content p {
+  margin-bottom: 1rem;
+}
+.wiki-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f1f1f7;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.wiki-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f1f1f7;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.wiki-content h4, .wiki-content h5, .wiki-content h6 {
+  font-weight: 600;
+  color: #f1f1f7;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.wiki-content strong {
+  color: #f1f1f7;
+  font-weight: 600;
+}
+.wiki-content em {
+  font-style: italic;
+  color: #c0c0d0;
+}
+.wiki-content a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.wiki-content a:hover {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+.wiki-content li {
+  margin-left: 1rem;
+  margin-bottom: 0.25rem;
+}
+.wiki-content ul {
+  list-style-type: disc;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+.wiki-content ol {
+  list-style-type: decimal;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+/* ----------------------- Wiki Rendered HTML Content --------------------- */
+.wiki-rendered-content {
+  color: #c0c0d0;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.wiki-rendered-content p {
+  margin-bottom: 1rem;
+  color: #c0c0d0;
+}
+.wiki-rendered-content h1, .wiki-rendered-content h2, .wiki-rendered-content h3, 
+.wiki-rendered-content h4, .wiki-rendered-content h5, .wiki-rendered-content h6 {
+  color: #f1f1f7;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.wiki-rendered-content a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+.wiki-rendered-content a:hover {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+.wiki-rendered-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+}
+.wiki-rendered-content ul, .wiki-rendered-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.wiki-rendered-content li {
+  margin-bottom: 0.25rem;
+  color: #c0c0d0;
+}
+.wiki-rendered-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+}
+.wiki-rendered-content th, .wiki-rendered-content td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
+  text-align: left;
+}
+.wiki-rendered-content th {
+  background: rgba(255, 255, 255, 0.05);
+  color: #f1f1f7;
+  font-weight: 600;
+}
+.wiki-rendered-content td {
+  background: rgba(0, 0, 0, 0.2);
+}
+.wiki-rendered-content .thumbinner {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  max-width: 100%;
+}
+.wiki-rendered-content .thumbcaption {
+  color: #8a8aa3;
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.wiki-rendered-content iframe {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+.wiki-rendered-content .mw-references-wrap {
+  font-size: 0.75rem;
+  color: #8a8aa3;
+}
+.wiki-rendered-content .reference {
+  font-size: 0.625rem;
+  vertical-align: super;
+  color: #3b82f6;
+}
+.wiki-rendered-content .navbox {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+.wiki-rendered-content .navbox-title {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem;
+  font-weight: 600;
+  color: #f1f1f7;
+}
+.wiki-rendered-content .navbox-group {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.5rem;
+  font-weight: 500;
+  color: #c0c0d0;
+}
+.wiki-rendered-content .navbox-list {
+  padding: 0.5rem;
+}
+.wiki-rendered-content .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.wiki-rendered-content .gallerybox {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  padding: 0.25rem;
+}
+.wiki-rendered-content .gallerytext {
+  font-size: 0.625rem;
+  color: #8a8aa3;
+  text-align: center;
+  padding: 0.25rem;
+}
+.wiki-rendered-content .video-container,
+.wiki-rendered-content .embedvideo {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #000;
+}
+.wiki-rendered-content .video-container iframe,
+.wiki-rendered-content .embedvideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
