@@ -610,7 +610,7 @@ export default function WikiPage() {
                         title="Overworld"
                         desc={locale === 'es' ? 'El mundo principal' : 'The main world'}
                         color="#22c55e"
-                        onClick={() => setSelectedArticle('El_Overworld')}
+                        onClick={() => setSelectedArticle('Mundo_superior')}
                       />
                       <DimensionCard
                         title="Nether"
