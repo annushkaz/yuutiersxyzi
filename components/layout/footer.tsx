@@ -42,7 +42,7 @@ export function Footer() {
         { label: t('footer.helpCenter'), href: '/docs' },
         { label: t('footer.reportBug'), href: '/docs/contact' },
         { label: t('footer.featureRequest'), href: '/docs/contact' },
-        { label: t('footer.status'), href: '/status' },
+        { label: t('footer.status'), href: '/' },
       ],
     },
   ]
