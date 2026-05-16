@@ -9,12 +9,12 @@ import { Footer } from '@/components/layout/footer'
 import Image from 'next/image'
 
 const popularServers = [
-  { ip: 'mc.hypixel.net', name: 'Hypixel', players: '45,000+' },
-  { ip: 'play.cubecraft.net', name: 'CubeCraft', players: '10,000+' },
-  { ip: 'mc.mineplex.com', name: 'Mineplex', players: '5,000+' },
-  { ip: 'play.hivemc.com', name: 'The Hive', players: '8,000+' },
+  { ip: 'donutsmp.net', name: 'DonutSMP', players: '30,000+' },
+  { ip: 'play.hivemc.com', name: 'The Hive', players: '15,000+' },
+  { ip: 'play.pika-network.net', name: 'PikaNetwork', players: '10,000+' },
+  { ip: 'jartex.fun', name: 'JartexNetwork', players: '6,000+' },
+  { ip: 'play.cubecraft.net', name: 'CubeCraft', players: '8,000+' },
   { ip: 'play.wynncraft.com', name: 'Wynncraft', players: '3,000+' },
-  { ip: 'mc.manacube.net', name: 'Manacube', players: '2,000+' },
 ]
 
 export default function ServerSearchPage() {
