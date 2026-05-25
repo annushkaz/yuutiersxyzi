@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'YuuTiers.xyz | The Ultimate Minecraft Hub',
+  title: 'YuuTiers | The Ultimate Minecraft Hub',
   description: 'The Minecraft community hub. Search players, browse skins and capes, monitor servers and follow live Mojang news. Built by Annushkaz_Yuu & Dexy_Yuu.',
   keywords: ['Minecraft', 'skins', 'capes', 'servers', 'players', 'news', 'Hypixel', 'YuuTiers'],
   authors: [
@@ -28,12 +28,12 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://yuutiers.xyz',
     siteName: 'YuuTiers.xyz',
-    title: 'YuuTiers.xyz | The Ultimate Minecraft Hub',
+    title: 'YuuTiers | The Ultimate Minecraft Hub',
     description: 'Search Minecraft players, monitor servers and follow live Mojang news in one place.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'YuuTiers.xyz | The Ultimate Minecraft Hub',
+    title: 'YuuTiers | The Ultimate Minecraft Hub',
     description: 'The most advanced Minecraft platform.',
     creator: '@YuuTiers',
   },

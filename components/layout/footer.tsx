@@ -49,10 +49,10 @@ export function Footer() {
 
   const importantProfiles = [
     {
-      name: 'Annushkaz_Yuu',
+      name: 'Shodzery',
       role: t('team.founder'),
       description: t('footer.annushkazDesc'),
-      href: '/player/Annushkaz_Yuu',
+      href: '/player/Shodzery',
       color: '#f59e0b',
     },
     {
