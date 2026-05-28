@@ -42,7 +42,7 @@ const releases = [
     items: [
       'First public release',
       'Player lookup, server status, news feed',
-      'Built and run by Annushkaz_Yuu and Dexy_Yuu',
+      'Built and run by Shodzery and Dexy_Yuu',
     ],
   },
 ]

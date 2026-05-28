@@ -8,7 +8,7 @@ import Link from 'next/link'
 import { useTranslation } from '@/components/i18n-provider'
 
 const trending = [
-  'Annushkaz_Yuu',
+  'Shodzery',
   'Dexy_Yuu',
   'Dream',
   'Technoblade',

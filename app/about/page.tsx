@@ -14,7 +14,7 @@ import {
 export const metadata = {
   title: 'About | YuuTiers',
   description:
-    'The story, mission and craft behind YuuTiers.xyz — a Minecraft hub built with love by Annushkaz_Yuu and Dexy_Yuu.',
+    'The story, mission and craft behind YuuTiers.xyz — a Minecraft hub built with love by Shodzery and Dexy_Yuu.',
 }
 
 const sections = [
@@ -55,7 +55,7 @@ export default function AboutPage() {
             </p>
             <p>
               One night, after looking up a friend&apos;s skin for the
-              hundredth time, <strong>Annushkaz_Yuu</strong> decided enough was
+              hundredth time, <strong>Shodzery</strong> decided enough was
               enough. The plan was simple: one clean, fast page that did the
               twenty things we kept coming back for. No ads. No tracking. No
               accounts.
@@ -201,7 +201,7 @@ export default function AboutPage() {
                   k: 'Owner',
                   v: (
                     <>
-                      <Link href="/team">Annushkaz_Yuu</Link> — built the
+                      <Link href="/team">Shodzery</Link> — built the
                       backend, frontend, design system, docs and almost
                       everything you&apos;ll find on this site.
                     </>
