@@ -51,7 +51,7 @@ export function Footer() {
     {
       name: 'Shodzery',
       role: t('team.founder'),
-      description: t('footer.annushkazDesc'),
+      description: t('footer.shodzeryDesc'),
       href: '/player/Shodzery',
       color: '#f59e0b',
     },
@@ -235,8 +235,8 @@ export function Footer() {
             </p>
             <p className="text-[#5a5a76] text-sm flex items-center gap-1.5">
               {t('footer.madeWith')} <Heart className="w-3.5 h-3.5 text-[#ef4444] fill-[#ef4444]" /> {t('footer.by')}{' '}
-              <Link href="/player/Annushkaz_Yuu" className="text-[#f59e0b] font-medium hover:underline">
-                Annushkaz_Yuu
+              <Link href="/player/Shodzery" className="text-[#f59e0b] font-medium hover:underline">
+                Shodzery
               </Link>
               {' & '}
               <Link href="/player/Dexy_Yuu" className="text-[#7c3aed] font-medium hover:underline">

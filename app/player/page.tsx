@@ -127,7 +127,7 @@ function PlayerHero({
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search a username, e.g. Annushkaz_Yuu"
+                placeholder="Search a username, e.g. Shodzery"
                 className="flex-1 bg-transparent px-4 py-5 text-base sm:text-lg text-[#f0f0f8] placeholder-[#4a4a6a] outline-none min-w-0"
                 autoFocus
               />
@@ -555,7 +555,7 @@ function CtaBanner() {
               what a full YuuTiers page looks like.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-2.5">
-              {['Notch', 'jeb_', 'Dinnerbone', 'Annushkaz_Yuu'].map((name) => (
+              {['Notch', 'jeb_', 'Dinnerbone', 'Shodzery'].map((name) => (
                 <Link
                   key={name}
                   href={`/player/${name}`}

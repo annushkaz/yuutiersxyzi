@@ -142,9 +142,9 @@ export default function PlayerPage() {
   if (isLoading) return <PlayerSkeleton />
   if (error || !player) return <PlayerNotFound name={name} />
 
-  const isOwner = player.name === 'Annushkaz_Yuu' || player.name === 'Dexy_Yuu'
+  const isOwner = player.name === 'Shozdzery' || player.name === 'Dexy_Yuu'
   const ownerLabel =
-    player.name === 'Annushkaz_Yuu' ? t('player.profile.founderOwner') : t('player.profile.coFounder')
+    player.name === 'Shodzery' ? t('player.profile.founderOwner') : t('player.profile.coFounder')
 
   const downloadSkin = async () => {
     try {
@@ -461,7 +461,7 @@ function Card({
 
 function OverviewTab({ player }: { player: PlayerApiResponse }) {
   const { t } = useTranslation()
-  const isOwner = player.name === 'Annushkaz_Yuu' || player.name === 'Dexy_Yuu'
+  const isOwner = player.name === 'Shodzery' || player.name === 'Dexy_Yuu'
   
   return (
     <div className="space-y-5">

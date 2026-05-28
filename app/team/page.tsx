@@ -9,8 +9,8 @@ import { SkinViewer3D } from '@/components/player/skin-viewer-3d'
 
 const team = [
   {
-    name: 'Annushkaz_Yuu',
-    uuid: 'Annushkaz_Yuu', // Username for skin lookup
+    name: 'Shodzery',
+    uuid: 'Shodzery', // Username for skin lookup
     role: 'Founder · Owner · Lead Engineer · Designer',
     bio: "I built every line of YuuTiers from scratch — the backend, the APIs, the design system, the 3D skin viewer, the docs, everything. It's my love letter to the Minecraft community and to the person who inspires me every single day. Hours of late nights, gallons of coffee, and a lot of heart went into this.",
     accent: '#3b82f6',
@@ -22,7 +22,7 @@ const team = [
       { label: 'GitHub', icon: Github, href: 'https://github.com' },
       { label: 'Twitter', icon: Twitter, href: 'https://twitter.com' },
     ],
-    discord: 'annushkaz_yuu',
+    discord: 'shodzery.priv',
   },
   {
     name: 'Dexy_Yuu',
@@ -71,7 +71,7 @@ export default function TeamPage() {
             </h1>
             <p className="text-[#8888aa] text-lg max-w-2xl mx-auto leading-relaxed text-pretty">
               YuuTiers is a passion project, born from love. Every pixel was crafted by{' '}
-              <span className="text-[#f0f0f8] font-medium">Annushkaz_Yuu</span> for his
+              <span className="text-[#f0f0f8] font-medium">Shodzery</span> for his
               girlfriend <span className="text-[#f0f0f8] font-medium">Dexy_Yuu</span>, and
               shared with the Minecraft community.
             </p>
@@ -95,7 +95,7 @@ export default function TeamPage() {
               <div className="flex items-center gap-2 mb-2">
                 <Heart className="w-4 h-4 text-[#ec4899] fill-[#ec4899]" />
                 <span className="text-[10px] uppercase tracking-[0.2em] text-[#ec4899] font-bold">
-                  Annushkaz_Yuu &amp; Dexy_Yuu
+                  Shodzery &amp; Dexy_Yuu
                 </span>
               </div>
               <p className="text-[#f0f0f8] text-xl sm:text-2xl font-semibold max-w-xl leading-snug text-balance">
