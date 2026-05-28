@@ -231,7 +231,7 @@ export function Footer() {
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-[#5a5a76] text-sm">
-              © {new Date().getFullYear()} YuuTiers.xyz · {t('footer.copyright')}
+              © {new Date().getFullYear()} YuuTiers · {t('footer.copyright')}
             </p>
             <p className="text-[#5a5a76] text-sm flex items-center gap-1.5">
               {t('footer.madeWith')} <Heart className="w-3.5 h-3.5 text-[#ef4444] fill-[#ef4444]" /> {t('footer.by')}{' '}
